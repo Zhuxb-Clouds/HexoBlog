@@ -1,8 +1,11 @@
 ---
 title: 假山问题-浅探transform参数与warper函数
 date: 2022-03-03 17:44:27
+categories:
+  - [技术,Renpy]
 tags: "Renpy"
 cover: https://cdn.jsdelivr.net/gh/Zhuxb-Clouds/PicDepot/img/假山-蓝.png
+copyright: false
 ---
 
 # 假山问题-浅探transform参数与warper函数
