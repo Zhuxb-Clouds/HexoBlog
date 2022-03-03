@@ -1,0 +1,50 @@
+#web_bg{
+    background-color: #1b1511
+}
+
+#page-header {
+    background-color: rgba(0, 0, 0);
+}
+
+.layout_post>#post {
+    /* 以下代表白色透明度为0.3 */
+    background: rgba(0, 0, 0, 0.3);
+}
+#site-title{
+    font-family: 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, serif;
+}
+#subtitle{
+    font-family: 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, serif;
+}
+
+.card-category-list-link{
+    border-radius: 5px;
+}
+.card-archive-list-link{
+    border-radius: 5px;
+}
+#page-header.nav-fixed #nav{
+    background-color: #4b6e6e
+}
+:root{
+    --scrollbar-color: #8b8b8b;
+    --text-highlight-color: #4d6978;
+    --btn-hover-color: #d82f83;
+    --btn-bg: #464646;
+    --text-bg-hover: rgba(119, 119, 119, 0.7);
+    --pseudo-hover: #000000;
+}
+
+#card-info-btn{
+    border-radius: 5px;
+}
+/* #card-info-btn:hover{
+    transform: skewX(70em)
+} */
+#pagination .page-number.current {
+    background: #839fc3c2;
+}
+
+#footer-wrap{
+    background-color: #697f7d;
+}
