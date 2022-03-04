@@ -1,8 +1,0 @@
-class:
-  class_name: 友情链接
-  link_list:
-    1:
-      name: 折扶桑工作室
-      link: https://blog.xxx.com
-      avatar: https://cdn.jsdelivr.net/gh/Zhuxb-Clouds/PicDepot/img/202203040416438.png
-      descr: 折扶桑的官方页面
