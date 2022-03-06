@@ -5,7 +5,9 @@
 #page-header {
     background-color: rgba(0, 0, 0);
 }
-
+#site-name{
+    color: white;
+}
 .layout_post>#post {
     /* 以下代表白色透明度为0.3 */
     background: rgba(0, 0, 0, 0.3);
@@ -24,7 +26,7 @@
     border-radius: 5px;
 }
 #page-header.nav-fixed #nav{
-    background-color: #4b6e6e
+    background-color: rgba(87, 175, 148, 0.5)
 }
 :root{
     --scrollbar-color: #8b8b8b;
@@ -47,4 +49,20 @@
 
 #footer-wrap{
     background-color: #697f7d;
+}
+/*分类中元素的前标*/
+.category-lists ul li:before {
+    border: 0.215em solid #dbdbdb;
+}
+/*分类中元素文字 hover*/
+.category-lists .category-list a:hover {
+    color: #0aa598;
+}
+
+#recent-posts > .recent-post-item >.recent-post-info > .article-title:hover {
+    color: #0aa598;
+}
+#recent-posts > .recent-post-item >.recent-post-info > .article-title {
+    color: #022b27;
+    display: inline;
 }
