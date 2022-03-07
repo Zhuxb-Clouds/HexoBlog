@@ -1,7 +1,8 @@
 ---
-title: Var、let、const的异同
+title: JavaScript：Var、let、const的异同
 date: 2022-03-05 19:51:25
 tags: JavaScript
+copyright: false
 cover: "https://cdn.jsdelivr.net/gh/Zhuxb-Clouds/PicDepot/img/202203052139275.webp"
 categories: 
   - [技术,JavaScript]

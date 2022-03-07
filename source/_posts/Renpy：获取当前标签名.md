@@ -1,5 +1,5 @@
 ---
-title: 获取当前标签名
+title: Renpy：获取当前标签名
 date: 2022-03-03 17:43:51
 categories:
   - [技术,Renpy]
