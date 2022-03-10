@@ -31,6 +31,7 @@
 :root{
     --scrollbar-color: #8b8b8b;
     --text-highlight-color: #4d6978;
+    --text-bg-hover: #0aa598;
     --btn-hover-color: #d82f83;
     --btn-bg: #464646;
     --text-bg-hover: rgba(119, 119, 119, 0.7);
@@ -65,4 +66,46 @@
 #recent-posts > .recent-post-item >.recent-post-info > .article-title {
     color: #022b27;
     display: inline;
+}
+
+#page-header.nav-fixed #nav a:hover, #page-header.nav-fixed #nav #site-name:hover, #page-header.nav-fixed #nav #toggle-menu:hover {
+    color: #ffffff;
+}
+
+.article-sort-title:before{
+    border: 5px solid #0aa598;
+}
+.article-sort-title:after{
+    background: #0aa598;
+}
+.article-sort-item.year:hover:before{
+    border-color: #b1fff8;
+}
+.article-sort-item:before{
+    border: 3px solid #0aa598;
+}
+
+.article-sort{
+    border-left : 2px solid #0aa598;
+}
+
+/* 标签hover颜色 */
+#aside-content .card-tag-cloud a:hover{
+    color:  #0aa598 !important;
+}
+#aside-content .aside-list > .aside-list-item .content > .title:hover, #aside-content .aside-list > .aside-list-item .content > .comment:hover{
+    color:  #0aa598 !important;
+}
+/* 分类hover */
+#aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover, #aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover{
+    background-color: #77b1ac;  
+}
+
+/* .post_bg{
+    border-radius: 20px;
+} */
+
+.cardHover, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget, .layout > .recent-posts .pagination > *:not(.space){
+    border-radius: 10px;
+    border: transparent
 }
