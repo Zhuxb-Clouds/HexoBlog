@@ -31,11 +31,8 @@ var parentDiv = webBg.parentNode;
 //将视频设置为非自动播放，而是通过按钮来调用。
 function playVideo(){
     parentDiv.insertBefore(video,webBg)
-
-    document.getElementById('site-title').setAttribute("style","color:#000000")
-    document.getElementById('site-subtitle').setAttribute("style","color:#000000")
     document.querySelector('video').play();
-    subtitle.removeChild(vButton);
+    parentDiv.removeChild(document.getElementById('site-info'));
 
 }
 
