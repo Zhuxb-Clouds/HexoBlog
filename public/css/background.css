@@ -13,11 +13,59 @@
     background: rgba(0, 0, 0, 0.3);
 }
 #site-title{
+    /* 标题主界面文字排版 */
+    /* position: absolute;
+    top: -200%;
+    left: 10%;
+    z-index: 100; */
+    letter-spacing:10px;
     font-family: 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, serif;
+
 }
-#subtitle{
-    font-family: 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, serif;
+#page-header #site-title {
+    font-size: 8em;
 }
+#page-header #site-title, #page-header #site-subtitle, #page-header {
+    text-align: left;
+}
+
+#page-header.full_page #site-info {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    padding: 0 10px;
+    
+    display: block;
+    width: 35%;
+    height: 30%;
+    overflow:hidden;
+}
+#page-header #site-subtitle {
+    font-size: 2em;
+    font-family: 'Noto Serif', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, serif;
+}
+#page-header #site-subtitle .intrduce{
+    font-size: 0.8em;
+    font-family: 
+    'Noto Sans SC'"Source Han Sans SC",
+    "Noto Sans CJK SC",
+    "Source Han Sans CN",
+    "Noto Sans SC",
+    "Source Han Sans TC",
+    "Noto Sans CJK TC", 
+}
+
+
+body{
+    font-family: 
+    'Noto Sans SC'"Source Han Sans SC",
+    "Noto Sans CJK SC",
+    "Source Han Sans CN",
+    "Noto Sans SC",
+    "Source Han Sans TC",
+    "Noto Sans CJK TC", 
+}
+
 
 .card-category-list-link{
     border-radius: 5px;
@@ -108,4 +156,39 @@
 .cardHover, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget, .layout > .recent-posts .pagination > *:not(.space){
     border-radius: 10px;
     border: transparent
+}
+/* 视频控件相关 */
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* opacity: 0.8; */
+}
+
+#page-header #site-subtitle #site-title{
+    color: #000000;
+}
+
+#videoButton{
+    width: 25%;
+    height: 40px;
+    background-color: white;
+    color:#697f7d;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 0.8em;
+    font-family: 
+    'Noto Sans SC'"Source Han Sans SC",
+    "Noto Sans CJK SC",
+    "Source Han Sans CN",
+    "Noto Sans SC",
+    "Source Han Sans TC",
+    "Noto Sans CJK TC", 
+
+}
+#videoButton:hover{
+    color:#0aa598;
 }
