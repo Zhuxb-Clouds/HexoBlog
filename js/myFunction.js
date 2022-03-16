@@ -20,14 +20,19 @@ myName.innerText = '朱仙变'
 
 
 //标题界面视频蒙版实现。
+let videoList = [
+    'https://cdn.jsdelivr.net/gh/Zhuxb-Clouds/PicDepot/img/202203170400135.mp4',
+    'https://cdn.jsdelivr.net/gh/Zhuxb-Clouds/PicDepot/img/202203170345715.mp4'
+]
+
+
 
 let webBg = document.getElementById('nav')
 var video = document.createElement('video');
-video.setAttribute('muted','')
-video.setAttribute('autoplay','autoplay')
-video.setAttribute('src','https://cdn.jsdelivr.net/gh/Zhuxb-Clouds/PicDepot/img/202203170400135.mp4')
-video.setAttribute('loop','')
+video.setAttribute('src',videoList[Math.floor(Math.random()*2)])
+video.setAttribute('loop','loop')
 var parentDiv = webBg.parentNode;
+
 //将视频设置为非自动播放，而是通过按钮来调用。
 function playVideo(){
     parentDiv.insertBefore(video,webBg)
@@ -39,7 +44,15 @@ function playVideo(){
 
 // vButton.addEventListener('click',playVideo(),false)
 var vButton = document.createElement('button')
-vButton.setAttribute('OnClick','playVideo()')
-vButton.setAttribute('id','videoButton')
 vButton.innerText = "More..."
+vButton.setAttribute('id','videoButton')
+vButton.setAttribute('OnClick','playVideo()')
 subtitle.appendChild(vButton);
+
+
+//预加载
+// for (let i = 0; i < videoList.length; i++) {
+//     var xhr = new XMLHttpRequest();
+//     xhr.open('GET', videoList[i]);
+//     xhr.send('');
+// }

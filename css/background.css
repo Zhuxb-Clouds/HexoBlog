@@ -25,34 +25,32 @@
 #page-header #site-title {
     font-size: 8em;
 }
-#page-header #site-title, #page-header #site-subtitle, #page-header {
-    text-align: left;
+#page-header #site-title, #page-header #site-subtitle {
+    text-align: right;
 }
+#page-header #site-subtitle{text-shadow: 2px 2px 1.5px rgba(0, 0, 0, 0.5);}
+
 
 #page-header.full_page #site-info {
     position: absolute;
-    top: 40%;
-    left: 8%;
+    top: 35%;
+    right: 8%;
     padding: 0 10px;
-    
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     display: block;
-    width: 35%;
+    width: 25%;
     height: 30%;
     overflow:hidden;
 }
+
+
 #page-header #site-subtitle {
     font-size: 2em;
     font-family: 'Noto Serif', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, serif;
 }
 #page-header #site-subtitle .intrduce{
     font-size: 0.8em;
-    font-family: 
-    'Noto Sans SC'"Source Han Sans SC",
-    "Noto Sans CJK SC",
-    "Source Han Sans CN",
-    "Noto Sans SC",
-    "Source Han Sans TC",
-    "Noto Sans CJK TC", 
+
 }
 
 
