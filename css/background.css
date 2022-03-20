@@ -27,6 +27,7 @@
 }
 #page-header #site-title, #page-header #site-subtitle {
     text-align: right;
+    overflow: hidden;
 }
 #page-header #site-subtitle{text-shadow: 2px 2px 1.5px rgba(0, 0, 0, 0.5);}
 
@@ -40,7 +41,6 @@
     display: block;
     width: 25%;
     height: 30%;
-    overflow:hidden;
 }
 
 
