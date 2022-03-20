@@ -1,0 +1,35 @@
+---
+title: Renpy：获取当前标签名
+date: 2022-03-03 17:43:51
+categories:
+  - [技术,Renpy]
+tags: "Renpy"
+cover: https://cdn.jsdelivr.net/gh/Zhuxb-Clouds/PicDepot/img/Result.png
+copyright: false
+---
+
+# 获取当前标签名
+
+renpy原本就有一个[crrent_label]可以获取当前标签名，但是游戏进行过程中当我们call或者jump到其他标签的时候，[crrent_label]获取的还是跳转前的标签名。
+
+解决方法：重写callback_label函数
+
+```
+init python:
+
+  def label_callback(name, abnormal):
+
+​    \# devlog.info(name)
+
+​    store.current_label = name
+
+
+
+  config.label_callback = label_callback
+```
+
+直接将代码块插入脚本，再使用  **$renpy.notify(current_label)** 进行测试
+
+![result](https://cdn.jsdelivr.net/gh/Zhuxb-Clouds/PicDepot/img/Result.png)
+
+明显的，已经可以使用了
